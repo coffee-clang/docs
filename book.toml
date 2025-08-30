@@ -7,6 +7,3 @@ title = "Coffee documentation"
 
 [build]
 build-dir = "public"
-
-#[output.html]
-#cname="www.example.com"
