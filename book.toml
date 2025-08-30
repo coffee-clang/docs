@@ -1,0 +1,12 @@
+[book]
+authors = ["Coffee contributors"]
+language = "en"
+multilingual = false
+src = "src"
+title = "Coffee documentation"
+
+[build]
+build-dir = "public"
+
+#[output.html]
+#cname="www.example.com"
