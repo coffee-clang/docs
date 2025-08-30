@@ -1,10 +1,9 @@
 ---
+title: Coffee Recipes
+has_children: true
+nav_order: 3
+---
 
-+ │ title: Coffee Recipes
-+ │ has_children: true
-+ │ nav_order: 2
-+ │ ---
-+ │
 
 For each library or project that can be used we will have a separate directory
 containing a `recipe.toml` file describing the project and how to transform it
