@@ -36,7 +36,7 @@ path.
 
 ####  package.name
 
-The name of the package.
+The name of the package. Mandatory field.
 The value is a text.
 
 `package.name = coffee`
@@ -44,13 +44,13 @@ The value is a text.
 
 #### package.description 
 
-The description of the package.
+The description of the package. Mandatory field.
 The value is a text.
 
 
 #### package.license 
 
-The license of the package.
+The license of the package.  Mandatory field.
 The value is a text, which can be a common abbreviation of a known license or
 the text of the license
 
@@ -67,36 +67,39 @@ The value is a text.
 
 `package.standard = c23`
 
-#### _package.authors_ = <list of texts>
+#### package.authors
 
 The authors of the package.
 The value is a text.
 
-#### _package.readme_ = <filename>
+#### package.readme
 
 The readme of the package.
-The value is a text.
+The value is a filename.
 
-#### _package.repository_ = <url>
+#### package.repository_
 
 The repository of the package.
 The value is an URL.
 
-#### _package.homepage_ = <url> 
+#### package.homepage
 
 The homepage of the package.
 The value is an URL.
 
-#### _package.keywords_ = <list>
+#### package.keywords
 
 The keywords of the package.
 The value is a text.
 
-#### _dependencies.<package_name>_ = { version = "1.0" }
+#### dependencies.<package_name> = { version = "1.0" }
 
 A dependency of the package.
 The value is a JSON dictionary with the version of the required library.
 The file contains a separate key for each dependency.
+
+`dependencies.tomlinc = { version = ">=1.0" }`
+
 
 #### _bin.name_ = "rv"
 #### bin.name = { name = "rv.o" , type = "lib" }
