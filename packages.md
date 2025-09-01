@@ -21,9 +21,12 @@ _package.homepage_ = <url>
 package.license = <text>
 _package.keywords_ = <list>
 _package.transform_ = <code>
+_package.coffee_ = <text>
 
 _dependencies.<package_name>_ = { version = "1.0" }
 
 _bin.name_ = "rv"
 bin.name = { name = "rv.o" , type = "lib" }
 ```
+
+_underlined_ fields are optional.
