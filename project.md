@@ -34,62 +34,65 @@ path.
 
 ##  `Coffee.toml`
 
-####  package.name
+####  name
 
 The name of the package. Mandatory field.
 The value is a text.
 
-`package.name = coffee`
+`name = "coffee"`
 
 
-#### package.description 
+#### description 
 
 The description of the package. Mandatory field.
 The value is a text.
+Defaults to the package name
 
+`description = "A modern C package manager"`
 
-#### package.license 
+#### license 
 
 The license of the package.  Mandatory field.
 The value is a text, which can be a common abbreviation of a known license or
-the text of the license
+the text of the license.
+Defaults to "No license given".
 
 
-#### package.version
+#### version
 
-The version of the package.
+The version of the package.  Mandatory field.
 The value is a text.
 
-#### _package.standard_ 
+#### _c-standard_ 
 
 The version of the C standard followed by the package.
 The value is a text.
 
-`package.standard = c23`
+`standard = c23`
 
 #### package.authors
 
-The authors of the package.
+The authors of the 
 The value is a text.
 
 #### package.readme
 
-The readme of the package.
+The readme of the 
 The value is a filename.
 
 #### package.repository_
 
-The repository of the package.
+The repository of the 
 The value is an URL.
 
 #### package.homepage
 
-The homepage of the package.
+The homepage of the 
 The value is an URL.
 
 #### package.keywords
 
-The keywords of the package.
+The keywords of the 
 The value is a text.
 
 #### dependencies.<package_name> = { version = "1.0" }
@@ -108,3 +111,13 @@ The version of the package.
 The value is a text or a json dictionary with the `name` of the binary and its
 `type`, that is the string `bin` or `lib`.
 
+### Complete example
+
+```
+name = "coffee"
+description = "A modern C package manager"
+
+[dependencies]
+tomlinc = { version = ">=1.0" }
+
+```
